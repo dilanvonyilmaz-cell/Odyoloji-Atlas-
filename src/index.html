@@ -197,6 +197,61 @@
           kısa, anlaşılır ve güncellenebilir bir bilgi merkezi oluşturmayı amaçlar.
         </p>
       </section>
+
+      <section class="section" id="quiz">
+        <div class="section__header">
+          <h2>Kısa öğrenme testi</h2>
+          <p>Bu mini quiz ile bilgini pekiştirebilirsin.</p>
+        </div>
+
+        <div class="quiz-card">
+          <div class="progress-box">
+            <div class="progress-labels">
+              <span>Öğrenme ilerlemesi</span>
+              <strong id="progressValue">0%</strong>
+            </div>
+            <div class="progress-bar">
+              <div id="progressBar" class="progress-bar__fill"></div>
+            </div>
+          </div>
+
+          <form id="quizForm" class="quiz-form">
+            <label>
+              1) İşitme değerlendirmesinde ilk adım nedir?
+              <select name="q1">
+                <option value="">Seçiniz</option>
+                <option value="a">Ameliyat planı</option>
+                <option value="b">Hasta öyküsü ve şikâyetlerin değerlendirilmesi</option>
+                <option value="c">İlaç tedavisi</option>
+              </select>
+            </label>
+
+            <label>
+              2) Vertigo değerlendirmesinde en önemli kavram hangisidir?
+              <select name="q2">
+                <option value="">Seçiniz</option>
+                <option value="a">Baş dönmesinin tipi ve süresi</option>
+                <option value="b">Mikrofon kullanımı</option>
+                <option value="c">Göz rengi</option>
+              </select>
+            </label>
+
+            <label>
+              3) Tinnitus değerlendirmesinde hangi bulgu önemlidir?
+              <select name="q3">
+                <option value="">Seçiniz</option>
+                <option value="a">Deri rengi</option>
+                <option value="b">Uyku pozisyonu</option>
+                <option value="c">Kulak çınlaması, işitme kaybı ve yaşam kalitesi</option>
+              </select>
+            </label>
+
+            <button type="submit">Testi değerlendir</button>
+          </form>
+
+          <p id="quizResult" class="quiz-result"></p>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -205,5 +260,6 @@
 
     <script src="auth.js"></script>
     <script src="app.js"></script>
+    <script src="quiz.js"></script>
   </body>
 </html>
