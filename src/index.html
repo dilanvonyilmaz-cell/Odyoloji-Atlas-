@@ -11,18 +11,32 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <nav class="topbar">
+      <a class="brand" href="#">Odyoloji Atlası</a>
+      <div class="topbar__links">
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#atlas">Atlas</a>
+        <a href="#vaka-ornekleri">Vaka Örnekleri</a>
+      </div>
+    </nav>
+
     <header class="hero">
       <div class="hero__content">
         <p class="eyebrow">Dilan Vonyılmaz • Odyoloji Atlası</p>
-        <h1>Vaka odaklı, açıklamalı ve anlaşılır bir odyoloji rehberi</h1>
+        <h1>Vaka odaklı, anlaşılır ve öğretici bir odyoloji rehberi</h1>
         <p>
-          Bu sayfa, işitme, denge ve kulak sağlığı alanında temel kavramları,
+          Bu web sayfası, işitme, denge ve kulak sağlığı alanında temel kavramları,
           gerçekçi vaka örneklerini ve kısa açıklamaları tek bir yerde sunar.
         </p>
         <div class="hero__actions">
           <a class="button" href="#vaka-ornekleri">Vaka örneklerini gör</a>
           <a class="button button--secondary" href="#hakkimda">Ben kimim?</a>
         </div>
+        <ul class="hero__highlights">
+          <li>Örnek vaka analizi</li>
+          <li>Kısa ve net açıklamalar</li>
+          <li>Tanı ve değerlendirme adımları</li>
+        </ul>
       </div>
     </header>
 
@@ -39,6 +53,27 @@
             açıklamak istiyorum. Bu proje, öğrenciler, asistanlar ve meraklılar için
             bir başlangıç noktasıdır.
           </p>
+        </div>
+      </section>
+
+      <section class="section" id="neler-var">
+        <div class="section__header">
+          <h2>Neler bulacaksınız?</h2>
+          <p>İçerikler, kısa özetler ve pratik öğrenme akışıyla düzenlendi.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Temel kavramlar</h3>
+            <p>İşitme, denge ve kulak sağlığı ile ilgili ana başlıkları kolayca takip edebilirsiniz.</p>
+          </article>
+          <article class="card">
+            <h3>Vaka temelli yaklaşım</h3>
+            <p>Gerçek hayat senaryoları üzerinden tanı ve değerlendirme adımlarını öğrenirsiniz.</p>
+          </article>
+          <article class="card">
+            <h3>Kısa açıklamalar</h3>
+            <p>Zengin içerik yerine, anlaşılır ve özet bilgiler sunmayı hedefledim.</p>
+          </article>
         </div>
       </section>
 
@@ -107,6 +142,10 @@
         </p>
       </section>
     </main>
+
+    <footer class="footer">
+      <p>© 2026 Dilan Vonyılmaz • Odyoloji Atlası</p>
+    </footer>
 
     <script src="app.js"></script>
   </body>
