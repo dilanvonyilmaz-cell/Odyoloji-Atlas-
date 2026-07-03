@@ -18,6 +18,7 @@ body {
   margin: 0;
   background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
   color: var(--text);
+  line-height: 1.6;
 }
 
 .hero {
@@ -27,7 +28,7 @@ body {
 }
 
 .hero__content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -46,13 +47,18 @@ h1 {
 
 .hero p {
   font-size: 1.05rem;
-  line-height: 1.7;
-  max-width: 680px;
+  max-width: 720px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
 }
 
 .button {
   display: inline-block;
-  margin-top: 1rem;
   padding: 0.8rem 1.2rem;
   background: #fff;
   color: var(--primary-dark);
@@ -61,14 +67,21 @@ h1 {
   border-radius: 999px;
 }
 
+.button--secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
 .section {
-  max-width: 1080px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
 }
 
 .section--alt {
-  padding-top: 0;
+  background: #eef5fc;
+  margin-top: 1rem;
 }
 
 .section__header h2 {
@@ -88,7 +101,7 @@ h1 {
 }
 
 .search input {
-  max-width: 360px;
+  max-width: 420px;
   padding: 0.8rem 1rem;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -97,11 +110,12 @@ h1 {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
 }
 
-.card {
+.card,
+.intro-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -113,7 +127,8 @@ h1 {
   margin-top: 0;
 }
 
-.card p {
+.card p,
+.intro-card p {
   color: var(--muted);
-  line-height: 1.6;
+  line-height: 1.7;
 }

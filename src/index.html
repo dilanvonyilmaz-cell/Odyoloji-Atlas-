@@ -3,27 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Odyoloji Atlası</title>
+    <title>Odyoloji Atlası | Dilan Vonyılmaz</title>
     <meta
       name="description"
-      content="Odyoloji eğitimini desteklemek için hazırlanmış interaktif atlas platformu."
+      content="Odyoloji alanında vaka örnekleri, açıklamalar ve temel kavramları bir araya getiren kişisel atlas sayfası."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero">
       <div class="hero__content">
-        <p class="eyebrow">Odyoloji eğitimi için dijital atlas</p>
-        <h1>İşitme, denge ve kulak sağlığı alanında kapsamlı bir rehber</h1>
+        <p class="eyebrow">Dilan Vonyılmaz • Odyoloji Atlası</p>
+        <h1>Vaka odaklı, açıklamalı ve anlaşılır bir odyoloji rehberi</h1>
         <p>
-          Bu platform, öğrenciler ve uzmanlar için temel kavramları, tanı adımlarını
-          ve klinik yaklaşımı kolay erişilebilir şekilde sunar.
+          Bu sayfa, işitme, denge ve kulak sağlığı alanında temel kavramları,
+          gerçekçi vaka örneklerini ve kısa açıklamaları tek bir yerde sunar.
         </p>
-        <a class="button" href="#atlas">Atlasa göz at</a>
+        <div class="hero__actions">
+          <a class="button" href="#vaka-ornekleri">Vaka örneklerini gör</a>
+          <a class="button button--secondary" href="#hakkimda">Ben kimim?</a>
+        </div>
       </div>
     </header>
 
     <main>
+      <section class="section" id="hakkimda">
+        <div class="section__header">
+          <h2>Ben kimim?</h2>
+          <p>Bu platformu, odyoloji alanını daha anlaşılır hale getirmek için hazırladım.</p>
+        </div>
+        <div class="intro-card">
+          <p>
+            Ben Dilan Vonyılmaz. Odyoloji alanında öğrenmeyi kolaylaştırmak,
+            vaka temelli anlatımlar sunmak ve klinik kavramları sade bir dille
+            açıklamak istiyorum. Bu proje, öğrenciler, asistanlar ve meraklılar için
+            bir başlangıç noktasıdır.
+          </p>
+        </div>
+      </section>
+
       <section class="section" id="atlas">
         <div class="section__header">
           <h2>Atlas bölümleri</h2>
@@ -31,32 +49,56 @@
         </div>
         <label class="search" for="searchInput">
           <span>Arama</span>
-          <input id="searchInput" type="search" placeholder="Ör. işitme testi" />
+          <input id="searchInput" type="search" placeholder="Ör. vertigo, vaka, test" />
         </label>
 
         <div class="card-grid">
           <article class="card">
             <h3>İşitme Testleri</h3>
-            <p>Ton havuzu, konuşma işitme testi ve uyaran tabanlı değerlendirme yöntemleri.</p>
+            <p><strong>Açıklama:</strong> Ton havuzu, konuşma işitme testi ve uyaran tabanlı değerlendirme yöntemleri.</p>
           </article>
           <article class="card">
             <h3>Vestibüler Değerlendirme</h3>
-            <p>Denge sistemi, vertigo ve rehabilitasyon süreci hakkında özet bilgiler.</p>
+            <p><strong>Açıklama:</strong> Denge sistemi, vertigo ve rehabilitasyon süreci hakkında kısa ve net özetler.</p>
           </article>
           <article class="card">
             <h3>İç Kulak Hastalıkları</h3>
-            <p>Labirentit, Menier hastalığı ve nadir görülen durumlara genel bakış.</p>
+            <p><strong>Açıklama:</strong> Labirentit, Menier hastalığı ve benzeri durumlar için temel bilgiler.</p>
           </article>
           <article class="card">
             <h3>Orta Kulak Patolojileri</h3>
-            <p>Otitis media, tüp, perforasyon ve cerrahi süreçlerle ilgili kavramlar.</p>
+            <p><strong>Açıklama:</strong> Otitis media, tüp, perforasyon ve cerrahi süreçlerle ilgili kavramlar.</p>
           </article>
         </div>
       </section>
 
-      <section class="section section--alt" id="about">
+      <section class="section section--alt" id="vaka-ornekleri">
         <div class="section__header">
-          <h2>Hedef</h2>
+          <h2>Vaka örnekleri</h2>
+          <p>Her vaka, tanı yaklaşımı ve klinik açıklamayı anlamak için kısa bir özet içerir.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Vaka 1: İşitme kaybı</h3>
+            <p><strong>Vaka:</strong> 42 yaşındaki hasta, son 6 ayda artan işitme kaybı ve çınlama şikâyeti yaşıyor.</p>
+            <p><strong>Açıklama:</strong> İlk değerlendirmede odyometri ve timpanometri yapılır; ses iletimi ve algısı birlikte incelenir.</p>
+          </article>
+          <article class="card">
+            <h3>Vaka 2: Baş dönmesi</h3>
+            <p><strong>Vaka:</strong> 29 yaşındaki hastada ani baş dönmesi, bulantı ve denge kaybı görülüyor.</p>
+            <p><strong>Açıklama:</strong> Vestibüler sistem değerlendirmesi ile hastalığın merkezi mi periferal mi olduğu anlaşılır.</p>
+          </article>
+          <article class="card">
+            <h3>Vaka 3: Kulak çınlaması</h3>
+            <p><strong>Vaka:</strong> Öğrenci, özellikle geceleri artan kulak çınlaması ve dikkat dağınıklığı yaşıyor.</p>
+            <p><strong>Açıklama:</strong> Tinnitus değerlendirmesi, işitme düzeyi ve yaşam kalitesi üzerinde odaklanır.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="amac">
+        <div class="section__header">
+          <h2>Amaç</h2>
           <p>Öğrenmeyi daha düzenli, görsel ve erişilebilir hale getirmek.</p>
         </div>
         <p>
