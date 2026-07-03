@@ -165,12 +165,54 @@ h1 {
 }
 
 .card,
-.intro-card {
+.intro-card,
+.auth-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.2rem;
   box-shadow: 0 8px 24px rgba(14, 92, 184, 0.08);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-width: 360px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.login-form input {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.login-form button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.85rem 1rem;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.auth-message {
+  margin-top: 0.8rem;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.auth-card.is-logged-in {
+  border-color: #9ed2b0;
+  background: #f4fff7;
 }
 
 .card h3 {

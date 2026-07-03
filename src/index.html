@@ -17,6 +17,7 @@
         <a href="#hakkimda">Hakkımda</a>
         <a href="#atlas">Atlas</a>
         <a href="#vaka-ornekleri">Vaka Örnekleri</a>
+        <a id="authNavLink" href="#giris">Giriş Yap</a>
       </div>
     </nav>
 
@@ -41,6 +42,27 @@
     </header>
 
     <main>
+      <section class="section" id="giris">
+        <div class="section__header">
+          <h2>Üye girişi</h2>
+          <p>Bu alan, siteye giriş yapmak için kullanılır. Demo kullanıcı bilgileriyle deneyebilirsiniz.</p>
+        </div>
+        <div class="auth-card" id="authCard">
+          <form id="loginForm" class="login-form">
+            <label>
+              Kullanıcı adı
+              <input id="usernameInput" type="text" placeholder="dilan" required />
+            </label>
+            <label>
+              Şifre
+              <input id="passwordInput" type="password" placeholder="odyoloji2026" required />
+            </label>
+            <button type="submit">Giriş yap</button>
+          </form>
+          <div id="authMessage" class="auth-message" aria-live="polite"></div>
+        </div>
+      </section>
+
       <section class="section" id="hakkimda">
         <div class="section__header">
           <h2>Ben kimim?</h2>
@@ -147,6 +169,7 @@
       <p>© 2026 Dilan Vonyılmaz • Odyoloji Atlası</p>
     </footer>
 
+    <script src="auth.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
