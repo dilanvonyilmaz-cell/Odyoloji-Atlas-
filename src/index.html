@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odyoloji Atlası</title>
+    <meta
+      name="description"
+      content="Odyoloji eğitimini desteklemek için hazırlanmış interaktif atlas platformu."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Odyoloji eğitimi için dijital atlas</p>
+        <h1>İşitme, denge ve kulak sağlığı alanında kapsamlı bir rehber</h1>
+        <p>
+          Bu platform, öğrenciler ve uzmanlar için temel kavramları, tanı adımlarını
+          ve klinik yaklaşımı kolay erişilebilir şekilde sunar.
+        </p>
+        <a class="button" href="#atlas">Atlasa göz at</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="atlas">
+        <div class="section__header">
+          <h2>Atlas bölümleri</h2>
+          <p>İlgili konuları hızlıca bulmak için arama yapabilirsiniz.</p>
+        </div>
+        <label class="search" for="searchInput">
+          <span>Arama</span>
+          <input id="searchInput" type="search" placeholder="Ör. işitme testi" />
+        </label>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>İşitme Testleri</h3>
+            <p>Ton havuzu, konuşma işitme testi ve uyaran tabanlı değerlendirme yöntemleri.</p>
+          </article>
+          <article class="card">
+            <h3>Vestibüler Değerlendirme</h3>
+            <p>Denge sistemi, vertigo ve rehabilitasyon süreci hakkında özet bilgiler.</p>
+          </article>
+          <article class="card">
+            <h3>İç Kulak Hastalıkları</h3>
+            <p>Labirentit, Menier hastalığı ve nadir görülen durumlara genel bakış.</p>
+          </article>
+          <article class="card">
+            <h3>Orta Kulak Patolojileri</h3>
+            <p>Otitis media, tüp, perforasyon ve cerrahi süreçlerle ilgili kavramlar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="about">
+        <div class="section__header">
+          <h2>Hedef</h2>
+          <p>Öğrenmeyi daha düzenli, görsel ve erişilebilir hale getirmek.</p>
+        </div>
+        <p>
+          Bu proje, odyoloji alanında çalışan öğrenciler, asistanlar ve uzmanlar için
+          kısa, anlaşılır ve güncellenebilir bir bilgi merkezi oluşturmayı amaçlar.
+        </p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

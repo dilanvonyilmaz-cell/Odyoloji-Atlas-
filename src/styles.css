@@ -1,0 +1,119 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, "Segoe UI", Roboto, sans-serif;
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --primary: #0e5cb8;
+  --primary-dark: #093d78;
+  --text: #17324d;
+  --muted: #5d6b7a;
+  --border: #dce7f3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+  color: var(--text);
+}
+
+.hero {
+  padding: 5rem 1.5rem 3.5rem;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: #fff;
+}
+
+.hero__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  margin: 0.4rem 0 1rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 680px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  background: #fff;
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
+.section {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.section--alt {
+  padding-top: 0;
+}
+
+.section__header h2 {
+  margin-bottom: 0.3rem;
+}
+
+.section__header p {
+  margin-top: 0;
+  color: var(--muted);
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.search input {
+  max-width: 360px;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 24px rgba(14, 92, 184, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: var(--muted);
+  line-height: 1.6;
+}
