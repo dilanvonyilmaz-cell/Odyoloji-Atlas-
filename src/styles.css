@@ -178,6 +178,12 @@ h1 {
   box-shadow: 0 8px 24px rgba(14, 92, 184, 0.14);
 }
 
+.tab-card a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
 .tab-card h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -186,6 +192,29 @@ h1 {
 .tab-card p {
   margin: 0;
   line-height: 1.7;
+}
+
+.detail-page {
+  min-height: 80vh;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.detail-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 24px rgba(14, 92, 184, 0.08);
+}
+
+.detail-card ul {
+  padding-left: 1.2rem;
 }
 
 .tab-card--blue {
